@@ -44,7 +44,7 @@ jobs:
               - "36:ac:56:ab:2a:50:65:97:f3:0e:cb:de:06:55:22:47"
       - run:
           command: |
-            ssh-keyscan 64.226.126.29 >> ~/.ssh/known_hosts
+            ssh-keyscan -t ed25519 64.226.126.29 >> ~/.ssh/known_hosts
             scp -r artifact/portfolio-ui root@64.226.126.29:/home/deployment/portfolio-ui
             ssh root@64.226.126.29 "cd /home/deployment && ./deploy.sh"
   increment_version:
