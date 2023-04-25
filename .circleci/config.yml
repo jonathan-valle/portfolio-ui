@@ -53,7 +53,7 @@ jobs:
       - checkout
       - add_ssh_keys:
           fingerprints:
-            - "7b:e3:9e:0c:24:74:b6:fe:68:ff:df:a4:9e:6a:b9:fb"
+            - "dc:f7:fb:77:72:e7:a9:8e:dd:29:02:f7:72:cd:9f:90"
       - run:
           command: |
             git config --global user.email "jonathan.valle78@gmail.com"
